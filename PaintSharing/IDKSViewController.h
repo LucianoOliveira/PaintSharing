@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class Draw;
+
 @interface IDKSViewController : UIViewController
+
+
+@property(nonatomic, strong) Draw *draw;
+
 
 @end

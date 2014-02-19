@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C6DAD83186268CD001AA7B0 /* IDKSShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6DAD82186268CD001AA7B0 /* IDKSShareViewController.m */; };
+		1C6DAD84186268CD001AA7B0 /* IDKSShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6DAD82186268CD001AA7B0 /* IDKSShareViewController.m */; };
+		1C7F4C691847D21D00851E6F /* IDKSCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7F4C681847D21D00851E6F /* IDKSCanvas.m */; };
 		1CBD13A71847CB1D0081D020 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBD13A61847CB1D0081D020 /* Foundation.framework */; };
 		1CBD13A91847CB1E0081D020 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBD13A81847CB1E0081D020 /* CoreGraphics.framework */; };
 		1CBD13AB1847CB1E0081D020 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBD13AA1847CB1E0081D020 /* UIKit.framework */; };
@@ -21,6 +24,12 @@
 		1CBD13C81847CB220081D020 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBD13AA1847CB1E0081D020 /* UIKit.framework */; };
 		1CBD13D01847CB220081D020 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CBD13CE1847CB220081D020 /* InfoPlist.strings */; };
 		1CBD13D21847CB220081D020 /* PaintSharingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBD13D11847CB220081D020 /* PaintSharingTests.m */; };
+		923235C518A96201001C9FD5 /* IDKSDrawsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923235C418A96201001C9FD5 /* IDKSDrawsViewController.m */; };
+		923235CB18A96840001C9FD5 /* PaintSharing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 923235C918A96840001C9FD5 /* PaintSharing.xcdatamodeld */; };
+		923235CF18A96FA7001C9FD5 /* Draw.m in Sources */ = {isa = PBXBuildFile; fileRef = 923235CE18A96FA7001C9FD5 /* Draw.m */; };
+		923235D218A96FA8001C9FD5 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 923235D118A96FA8001C9FD5 /* Path.m */; };
+		923235D618A970B8001C9FD5 /* Draw+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 923235D518A970B8001C9FD5 /* Draw+CRUD.m */; };
+		923235D918A970EF001C9FD5 /* Path+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 923235D818A970EF001C9FD5 /* Path+CRUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C6DAD81186268CD001AA7B0 /* IDKSShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDKSShareViewController.h; path = PaintSharing/IDKSShareViewController.h; sourceTree = "<group>"; };
+		1C6DAD82186268CD001AA7B0 /* IDKSShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDKSShareViewController.m; path = PaintSharing/IDKSShareViewController.m; sourceTree = "<group>"; };
+		1C7F4C671847D21D00851E6F /* IDKSCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDKSCanvas.h; path = PaintSharing/IDKSCanvas.h; sourceTree = "<group>"; };
+		1C7F4C681847D21D00851E6F /* IDKSCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDKSCanvas.m; path = PaintSharing/IDKSCanvas.m; sourceTree = "<group>"; };
 		1CBD13A31847CB1D0081D020 /* PaintSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CBD13A61847CB1D0081D020 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1CBD13A81847CB1E0081D020 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +58,25 @@
 		1CBD13B51847CB220081D020 /* IDKSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDKSAppDelegate.h; sourceTree = "<group>"; };
 		1CBD13B61847CB220081D020 /* IDKSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDKSAppDelegate.m; sourceTree = "<group>"; };
 		1CBD13B91847CB220081D020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1CBD13BB1847CB220081D020 /* IDKSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDKSViewController.h; sourceTree = "<group>"; };
-		1CBD13BC1847CB220081D020 /* IDKSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDKSViewController.m; sourceTree = "<group>"; };
+		1CBD13BB1847CB220081D020 /* IDKSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IDKSViewController.h; path = PaintSharing/IDKSViewController.h; sourceTree = "<group>"; };
+		1CBD13BC1847CB220081D020 /* IDKSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IDKSViewController.m; path = PaintSharing/IDKSViewController.m; sourceTree = "<group>"; };
 		1CBD13BE1847CB220081D020 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1CBD13C41847CB220081D020 /* PaintSharingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintSharingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CBD13C51847CB220081D020 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1CBD13CD1847CB220081D020 /* PaintSharingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaintSharingTests-Info.plist"; sourceTree = "<group>"; };
 		1CBD13CF1847CB220081D020 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1CBD13D11847CB220081D020 /* PaintSharingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintSharingTests.m; sourceTree = "<group>"; };
+		923235C318A96201001C9FD5 /* IDKSDrawsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDKSDrawsViewController.h; sourceTree = "<group>"; };
+		923235C418A96201001C9FD5 /* IDKSDrawsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDKSDrawsViewController.m; sourceTree = "<group>"; };
+		923235CA18A96840001C9FD5 /* PaintSharing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaintSharing.xcdatamodel; sourceTree = "<group>"; };
+		923235CD18A96FA7001C9FD5 /* Draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Draw.h; sourceTree = "<group>"; };
+		923235CE18A96FA7001C9FD5 /* Draw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Draw.m; sourceTree = "<group>"; };
+		923235D018A96FA8001C9FD5 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
+		923235D118A96FA8001C9FD5 /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Path.m; sourceTree = "<group>"; };
+		923235D418A970B8001C9FD5 /* Draw+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Draw+CRUD.h"; sourceTree = "<group>"; };
+		923235D518A970B8001C9FD5 /* Draw+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Draw+CRUD.m"; sourceTree = "<group>"; };
+		923235D718A970EF001C9FD5 /* Path+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Path+CRUD.h"; sourceTree = "<group>"; };
+		923235D818A970EF001C9FD5 /* Path+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Path+CRUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +136,14 @@
 		1CBD13AC1847CB1E0081D020 /* PaintSharing */ = {
 			isa = PBXGroup;
 			children = (
+				1CBD13BE1847CB220081D020 /* Images.xcassets */,
+				1CBD13B81847CB220081D020 /* Main.storyboard */,
+				923235C918A96840001C9FD5 /* PaintSharing.xcdatamodeld */,
 				1CBD13B51847CB220081D020 /* IDKSAppDelegate.h */,
 				1CBD13B61847CB220081D020 /* IDKSAppDelegate.m */,
-				1CBD13B81847CB220081D020 /* Main.storyboard */,
-				1CBD13BB1847CB220081D020 /* IDKSViewController.h */,
-				1CBD13BC1847CB220081D020 /* IDKSViewController.m */,
-				1CBD13BE1847CB220081D020 /* Images.xcassets */,
+				923235D318A96FBD001C9FD5 /* managedObjects */,
+				923235BF18A96077001C9FD5 /* Controllers */,
+				923235CC18A96961001C9FD5 /* Views */,
 				1CBD13AD1847CB210081D020 /* Supporting Files */,
 			);
 			path = PaintSharing;
@@ -150,6 +176,45 @@
 				1CBD13CE1847CB220081D020 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		923235BF18A96077001C9FD5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				923235C318A96201001C9FD5 /* IDKSDrawsViewController.h */,
+				923235C418A96201001C9FD5 /* IDKSDrawsViewController.m */,
+				1CBD13BB1847CB220081D020 /* IDKSViewController.h */,
+				1CBD13BC1847CB220081D020 /* IDKSViewController.m */,
+				1C6DAD81186268CD001AA7B0 /* IDKSShareViewController.h */,
+				1C6DAD82186268CD001AA7B0 /* IDKSShareViewController.m */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		923235CC18A96961001C9FD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C7F4C671847D21D00851E6F /* IDKSCanvas.h */,
+				1C7F4C681847D21D00851E6F /* IDKSCanvas.m */,
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		923235D318A96FBD001C9FD5 /* managedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				923235D418A970B8001C9FD5 /* Draw+CRUD.h */,
+				923235D518A970B8001C9FD5 /* Draw+CRUD.m */,
+				923235D718A970EF001C9FD5 /* Path+CRUD.h */,
+				923235D818A970EF001C9FD5 /* Path+CRUD.m */,
+				923235D018A96FA8001C9FD5 /* Path.h */,
+				923235D118A96FA8001C9FD5 /* Path.m */,
+				923235CD18A96FA7001C9FD5 /* Draw.h */,
+				923235CE18A96FA7001C9FD5 /* Draw.m */,
+			);
+			name = managedObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +316,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CBD13B31847CB220081D020 /* main.m in Sources */,
+				923235D218A96FA8001C9FD5 /* Path.m in Sources */,
+				923235C518A96201001C9FD5 /* IDKSDrawsViewController.m in Sources */,
 				1CBD13BD1847CB220081D020 /* IDKSViewController.m in Sources */,
+				923235CB18A96840001C9FD5 /* PaintSharing.xcdatamodeld in Sources */,
+				1C7F4C691847D21D00851E6F /* IDKSCanvas.m in Sources */,
+				923235D918A970EF001C9FD5 /* Path+CRUD.m in Sources */,
+				1C6DAD83186268CD001AA7B0 /* IDKSShareViewController.m in Sources */,
+				923235D618A970B8001C9FD5 /* Draw+CRUD.m in Sources */,
 				1CBD13B71847CB220081D020 /* IDKSAppDelegate.m in Sources */,
+				923235CF18A96FA7001C9FD5 /* Draw.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CBD13D21847CB220081D020 /* PaintSharingTests.m in Sources */,
+				1C6DAD84186268CD001AA7B0 /* IDKSShareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +535,7 @@
 				1CBD13D71847CB220081D020 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CBD13D81847CB220081D020 /* Build configuration list for PBXNativeTarget "PaintSharingTests" */ = {
 			isa = XCConfigurationList;
@@ -469,8 +544,22 @@
 				1CBD13DA1847CB220081D020 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		923235C918A96840001C9FD5 /* PaintSharing.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				923235CA18A96840001C9FD5 /* PaintSharing.xcdatamodel */,
+			);
+			currentVersion = 923235CA18A96840001C9FD5 /* PaintSharing.xcdatamodel */;
+			path = PaintSharing.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1CBD139B1847CB1D0081D020 /* Project object */;
 }
