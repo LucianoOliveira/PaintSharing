@@ -30,6 +30,7 @@
 		923235D218A96FA8001C9FD5 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 923235D118A96FA8001C9FD5 /* Path.m */; };
 		923235D618A970B8001C9FD5 /* Draw+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 923235D518A970B8001C9FD5 /* Draw+CRUD.m */; };
 		923235D918A970EF001C9FD5 /* Path+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 923235D818A970EF001C9FD5 /* Path+CRUD.m */; };
+		92710AE218B522520047C3C9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92710AE118B522520047C3C9 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		923235D518A970B8001C9FD5 /* Draw+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Draw+CRUD.m"; sourceTree = "<group>"; };
 		923235D718A970EF001C9FD5 /* Path+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Path+CRUD.h"; sourceTree = "<group>"; };
 		923235D818A970EF001C9FD5 /* Path+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Path+CRUD.m"; sourceTree = "<group>"; };
+		92710AE118B522520047C3C9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92710AE218B522520047C3C9 /* CoreData.framework in Frameworks */,
 				1CBD13A91847CB1E0081D020 /* CoreGraphics.framework in Frameworks */,
 				1CBD13AB1847CB1E0081D020 /* UIKit.framework in Frameworks */,
 				1CBD13A71847CB1D0081D020 /* Foundation.framework in Frameworks */,
@@ -125,6 +128,7 @@
 		1CBD13A51847CB1D0081D020 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92710AE118B522520047C3C9 /* CoreData.framework */,
 				1CBD13A61847CB1D0081D020 /* Foundation.framework */,
 				1CBD13A81847CB1E0081D020 /* CoreGraphics.framework */,
 				1CBD13AA1847CB1E0081D020 /* UIKit.framework */,

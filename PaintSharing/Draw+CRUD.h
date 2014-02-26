@@ -29,6 +29,9 @@
  */
 + (Draw *)readByName:(NSString *)name inManagedObjectContext:(NSManagedObjectContext *)context;
 
+
++ (void)deleteDraw:(Draw *)draw inManagedObjectContext:(NSManagedObjectContext *)context;
+
 // TODO: implement the other operations.
 
 @end

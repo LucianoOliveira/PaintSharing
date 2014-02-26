@@ -55,6 +55,8 @@
     
     if (error || !fetch)
         NSLog(@"ERROR PERFORMING FETCH IN DRAWS TABLE VIEW: %@", error.localizedDescription);
+    
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -165,6 +167,26 @@
         case NSFetchedResultsChangeDelete:
             [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
             break;
+    }
+}
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return TRUE;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        // Delete the data from DB. It's necessary to remove before delete the row in the table.
+        IDKSAppDelegate *app = [[UIApplication sharedApplication] delegate];
+        [Draw deleteDraw:[self.controller objectAtIndexPath:indexPath] inManagedObjectContext:app.managedObjectContext];
+        
+        // Don't need to call the next method because the NSFetchedResultsController deletes the
+        // row ;-)
+        // Delete the row from the data source
+        // [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 
